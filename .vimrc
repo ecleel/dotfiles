@@ -19,6 +19,7 @@ set laststatus=2
 " \ is the leader character
 let mapleader = ","
 
+imap <c-t> :CommandT
 " Edit the README_FOR_APP (makes :R commands work)
 map <Leader>R :e doc/README_FOR_APP<CR>
 
@@ -50,14 +51,18 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
 syntax enable
-call togglebg#map("<F5>")
-if has('gui_running')
-  set background=light
-else
-  set background=dark
-endif
-let g:solarized_termcolors=265
-colorscheme solarized
+" call togglebg#map("<F5>")
+" if has('gui_running')
+"   set background=light
+" else
+"   set background=dark
+" endif
+" let g:solarized_termcolors=32
+" colorscheme solarized
+
+let base16colorspace=256  " Access colors present in 256 colorspace
+colorscheme base16-ocean
+set background=dark
 
 "" Whitespace
 set nowrap                      " don't wrap lines
