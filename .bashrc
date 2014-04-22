@@ -16,19 +16,15 @@ alias rs='rails s'
 
 alias ll='ls -lG'
 
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
 export RUBY_HEAP_MIN_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
 
-
-PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
-
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
