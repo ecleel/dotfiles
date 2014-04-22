@@ -1,8 +1,4 @@
-
-export EDITOR="$HOME/bin/mate -w"
-
-PATH=$PATH:$HOME/bin # Add RVM to PATH for scripting
-# source ~/git-completion.bash
+source ~/git-completion.bash
 
 alias g='git'
 alias ga='git add'
@@ -17,7 +13,6 @@ alias gd='git diff'
 alias r='rails'
 alias rc='rails c'
 alias rs='rails s'
-
 
 alias ll='ls -lG'
 

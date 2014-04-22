@@ -51,14 +51,6 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
 syntax enable
-" call togglebg#map("<F5>")
-" if has('gui_running')
-"   set background=light
-" else
-"   set background=dark
-" endif
-" let g:solarized_termcolors=32
-" colorscheme solarized
 
 let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme base16-ocean
@@ -89,4 +81,3 @@ au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 au BufNewFile,BufRead *.json set ft=javascript
 
 au BufRead,BufNewFile *.txt call s:setupWrapping()
-
