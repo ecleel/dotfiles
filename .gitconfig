@@ -6,7 +6,7 @@
 
 [alias]
 	co = checkout
-	ci = commit
+	ci = commit --verbose
   rb = rebase
 	st = status
 	br = branch
