@@ -16,6 +16,9 @@ alias rs='rails s'
 
 alias ll='ls -lG'
 
+HISTSIZE=-1
+HISTFILESIZE=-1
+
 export BUNDLER_EDITOR=mate
 
 export RUBY_HEAP_MIN_SLOTS=1000000
@@ -27,6 +30,7 @@ export RUBY_HEAP_FREE_MIN=500000
 export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export PATH="~/bin:$PATH"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
